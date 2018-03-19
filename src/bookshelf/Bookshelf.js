@@ -19,7 +19,7 @@ const Bookshelf = (props) => {
                             <Book
                                 key={book.id}
                                 id={book.id}
-                                image={book.imageLinks.thumbnail}
+                                image={book ? book.imageLinks ? book.imageLinks.thumbnail ? book.imageLinks.thumbnail : null : null : null}
                                 shelf={myBooks ?  parseBookShelves(book) : book.shelf}
                                 title={book.title}
                                 authors={book.authors}

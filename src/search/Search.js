@@ -19,7 +19,7 @@ class Search extends Component {
     };
 
     onUpdateQuery = query => {
-        this.setState({ query: query.trim()});
+        this.setState({ query: query});
         this.searchBooks(this.state.query);
     };
 
